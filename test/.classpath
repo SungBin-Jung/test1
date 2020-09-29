@@ -15,5 +15,11 @@
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
 	<classpathentry kind="lib" path="C:/app/PC2/product/18.0.0/dbhomeXE/jdbc/lib/ojdbc8.jar"/>
+	<classpathentry kind="lib" path="C:/Users/PC2/Desktop/quartz-2.2.3/lib/c3p0-0.9.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/PC2/Desktop/quartz-2.2.3/lib/log4j-1.2.16.jar"/>
+	<classpathentry kind="lib" path="C:/Users/PC2/Desktop/quartz-2.2.3/lib/quartz-2.2.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/PC2/Desktop/quartz-2.2.3/lib/quartz-jobs-2.2.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/PC2/Desktop/quartz-2.2.3/lib/slf4j-api-1.7.7.jar"/>
+	<classpathentry kind="lib" path="C:/Users/PC2/Desktop/quartz-2.2.3/lib/slf4j-log4j12-1.7.7.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

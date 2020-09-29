@@ -1,13 +1,13 @@
 <%@page import="test.ProductInfoDAO" %>
-<%@page import="test.ProductInfoDTO" %>
+<%@page import="test.ProductInfoDO" %>
 <%@page import="java.util.List" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <%
 	ProductInfoDAO productInfoDAO = ProductInfoDAO.getInstance();
-	List<ProductInfoDTO> list = productInfoDAO.getList();
-	ProductInfoDTO data = new ProductInfoDTO();
+	List<ProductInfoDO> list = productInfoDAO.getList();
+	ProductInfoDO data = new ProductInfoDO();
 %>
 <html>
 <head>
@@ -16,8 +16,8 @@
 </head>
 <body>
 	<div align="center">
+	<h1>상품 정보 리스트</h1>
 	<table border="1">
-	<tr><td align="center" colspan="2">상품 정보 리스트</td></tr>
 	<tr>
 	<td>제품 명</td>
 	<td>가격</td>

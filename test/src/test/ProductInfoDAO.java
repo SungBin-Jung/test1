@@ -13,13 +13,13 @@ public class ProductInfoDAO {
 	public static ProductInfoDAO getInstance() {
 		return productInfoDAO;
 	}
-	public List<ProductInfoDTO> getList() {
+	public List<ProductInfoDO> getList() {
 		String driver = "oracle.jdbc.driver.OracleDriver";
 		String url = "jdbc:oracle:thin:@localhost:1521/XE";
 		Connection conn = null;
 		PreparedStatement pstm = null;
 		ResultSet rs = null;
-		List<ProductInfoDTO> list = new ArrayList<>();
+		List<ProductInfoDO> list = new ArrayList<>();
 		try {
 			Class.forName(driver);
 			conn = DriverManager.getConnection(url,"c##test","1234");
@@ -27,7 +27,7 @@ public class ProductInfoDAO {
 			rs = pstm.executeQuery();
 			if(rs.next()) {
 				do {
-					ProductInfoDTO data = new ProductInfoDTO();
+					ProductInfoDO data = new ProductInfoDO();
 					data.setNo(rs.getInt("no"));
 					data.setName(rs.getString("name"));
 					data.setPrice(rs.getInt("price"));
@@ -48,7 +48,7 @@ public class ProductInfoDAO {
 		}
 		return list;
 	}
-	public void insert(ProductInfoDTO data) {
+	/*public void insert(ProductInfoDTO data) {
 		String driver = "oracle.jdbc.driver.OracleDriver";
 		String url = "jdbc:oracle:thin:@localhost:5500:em";
 		Connection conn = null;
@@ -72,5 +72,5 @@ public class ProductInfoDAO {
 				e2.getStackTrace();
 			}
 		}
-	}
+	}*/
 }

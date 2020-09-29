@@ -1,6 +1,6 @@
 package test;
 
-public class ProductInfoDTO {
+public class ProductInfoDO {
 	
 	private int no;
 	private String name;
